@@ -159,6 +159,39 @@ namespace Examples.Tests
         }
 
         [Test]
+        public void ReferencingANonIncludedRelatedEntityThatWasAlreadyLoadedOnThisDbContextWillReturnANonNullValueBecauseItIsAlreadyCachedUpEvenWithLazyLoadingDisabled()
+        {
+            using (ExampleDbContext dbContext = new ExampleDbContext())
+            {
+                dbContext.Database.Log = s => System.Diagnostics.Debug.WriteLine(s);
+                dbContext.Configuration.LazyLoadingEnabled = false;
+
+                //fetch all pets so they are cached up on the dbContext already
+                List<Pet> pets = dbContext.Pets.ToList();
+
+                /*
+                 * SELECT 
+                    [Extent1].[Id] AS [Id], 
+                    [Extent1].[Name] AS [Name], 
+                    [Extent1].[OwningPersonId] AS [OwningPersonId]
+                    FROM [dbo].[Pet] AS [Extent1]
+                 * */
+
+                Person person = dbContext.Persons.First(p => p.Name == PERSON_JANE);
+
+                /*
+                 * SELECT TOP (1) 
+                    [Extent1].[Id] AS [Id], 
+                    [Extent1].[Name] AS [Name]
+                    FROM [dbo].[Person] AS [Extent1]
+                    WHERE N'Jane' = [Extent1].[Name]
+                 * */
+
+                Assert.That(person.Pets, Is.Not.Null);
+            }
+        }
+
+        [Test]
         public void IncludingPetsWillCausePetsToBePulledBackAsPartOfASingleQueryForPersonsAndPets()
         {
             using (ExampleDbContext dbContext = new ExampleDbContext())
