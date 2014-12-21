@@ -10,7 +10,8 @@ namespace Examples.Tests
 {
     [TestFixture]
     //All tests in this class require that you monitor the Output window (aka console) to see what queries are emitted.
-    //The first three queries are related to migrations and can be ignored.
+    //The first three queries are related to migrations and can be ignored. The resulting queries are displayed immediately
+    //after the code that causes them to be emitted below.
     public class LazyLoadingExamples
     {
         public const string PERSON_JANE = "Jane";
