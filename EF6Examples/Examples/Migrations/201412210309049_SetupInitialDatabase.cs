@@ -1,3 +1,5 @@
+using Examples.Tests;
+
 namespace Examples.Migrations
 {
     using System;
@@ -28,12 +30,12 @@ namespace Examples.Migrations
                 .ForeignKey("dbo.Person", t => t.OwningPersonId, cascadeDelete: true)
                 .Index(t => t.OwningPersonId);
 
-            this.Sql("INSERT INTO Person (Name) VALUES ('Jane')");
-            this.Sql("INSERT INTO Person (Name) VALUES ('Bob')");
-            this.Sql("INSERT INTO Person (Name) VALUES ('Anna')");
-            this.Sql("INSERT INTO Pet (Name, OwningPersonId) VALUES ('Fluffy', 1)");
-            this.Sql("INSERT INTO Pet (Name, OwningPersonId) VALUES ('Puffy', 1)");
-            this.Sql("INSERT INTO Pet (Name, OwningPersonId) VALUES ('Fido', 2)");
+            this.Sql("INSERT INTO Person (Name) VALUES ('" + LazyLoadingExamples.PERSON_JANE + "')");
+            this.Sql("INSERT INTO Person (Name) VALUES ('" + LazyLoadingExamples.PERSON_BOB + "')");
+            this.Sql("INSERT INTO Person (Name) VALUES ('" + LazyLoadingExamples.PERSON_JANE + "')");
+            this.Sql("INSERT INTO Pet (Name, OwningPersonId) VALUES ('" + LazyLoadingExamples.PET_FLUFFY + "', 1)");
+            this.Sql("INSERT INTO Pet (Name, OwningPersonId) VALUES ('" + LazyLoadingExamples.PET_PUFFY + "', 1)");
+            this.Sql("INSERT INTO Pet (Name, OwningPersonId) VALUES ('" + LazyLoadingExamples.PET_FIDO + "', 2)");
         }
         
         public override void Down()
