@@ -1,0 +1,14 @@
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\bin\Debug\Examples.dll.config
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\bin\Debug\Examples.dll
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\bin\Debug\Examples.pdb
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\bin\Debug\EntityFramework.dll
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\bin\Debug\EntityFramework.SqlServer.dll
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\bin\Debug\EntityFramework.xml
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\bin\Debug\EntityFramework.SqlServer.xml
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\obj\Debug\Examples.csprojResolveAssemblyReference.cache
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\obj\Debug\Examples.dll
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\obj\Debug\Examples.pdb
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\bin\Debug\nunit.framework.dll
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\bin\Debug\nunit.framework.xml
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\obj\Debug\Examples.Migrations.SetupInitialDatabase.resources
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\obj\Debug\Examples.csproj.GenerateResource.Cache
