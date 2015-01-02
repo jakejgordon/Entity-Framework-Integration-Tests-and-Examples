@@ -13,6 +13,7 @@ namespace Examples
     {
         public virtual DbSet<Person> Persons { get; set; }
         public virtual DbSet<Pet> Pets { get; set; }
+        public virtual DbSet<PetFoodBrand> PetFoodBrands { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -12,8 +12,11 @@ namespace Examples.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public int OwningPersonId { get; set; }
+        public int? FavoritePetFoodBrandId { get; set; }
 
         [ForeignKey("OwningPersonId")]
         public virtual Person Owner { get; set; }
+        [ForeignKey("FavoritePetFoodBrandId")]
+        public virtual PetFoodBrand FavoritePetFoodBrand { get; set; }
     }
 }

@@ -55,9 +55,18 @@
     <Compile Include="Migrations\201412210309049_SetupInitialDatabase.Designer.cs">
       <DependentUpon>201412210309049_SetupInitialDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201412211933500_AddPetFoodBrands.cs" />
+    <Compile Include="Migrations\201412211933500_AddPetFoodBrands.Designer.cs">
+      <DependentUpon>201412211933500_AddPetFoodBrands.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201412212013470_SetFavoriteFoodBrandOnFluffy.cs" />
+    <Compile Include="Migrations\201412212013470_SetFavoriteFoodBrandOnFluffy.Designer.cs">
+      <DependentUpon>201412212013470_SetFavoriteFoodBrandOnFluffy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Pet.cs" />
+    <Compile Include="Models\PetFoodBrand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\LazyLoadingExamples.cs" />
   </ItemGroup>
@@ -68,6 +77,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201412210309049_SetupInitialDatabase.resx">
       <DependentUpon>201412210309049_SetupInitialDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412211933500_AddPetFoodBrands.resx">
+      <DependentUpon>201412211933500_AddPetFoodBrands.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412212013470_SetFavoriteFoodBrandOnFluffy.resx">
+      <DependentUpon>201412212013470_SetFavoriteFoodBrandOnFluffy.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

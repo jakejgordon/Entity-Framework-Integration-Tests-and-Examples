@@ -12,3 +12,5 @@ C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Exam
 C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\bin\Debug\nunit.framework.xml
 C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\obj\Debug\Examples.Migrations.SetupInitialDatabase.resources
 C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\obj\Debug\Examples.csproj.GenerateResource.Cache
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\obj\Debug\Examples.Migrations.AddPetFoodBrands.resources
+C:\Sandbox\Jake\Entity-Framework-Integration-Tests-and-Examples\EF6Examples\Examples\obj\Debug\Examples.Migrations.SetFavoriteFoodBrandOnFluffy.resources
